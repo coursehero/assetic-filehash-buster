@@ -1,5 +1,5 @@
 {
-    "name": "coursehero/assetic-filehash-buster",
+    "name": "course-hero/assetic-filehash-buster",
     "description": "Adds cache busting based on the hash of all asset contents to assetic",
     "license": "Apache-2",
     "authors": [
