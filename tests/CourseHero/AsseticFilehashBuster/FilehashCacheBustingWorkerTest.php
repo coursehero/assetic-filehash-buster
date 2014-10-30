@@ -1,9 +1,9 @@
 <?php
+
 namespace CourseHero\AsseticFilehashBuster\Tests;
 
-
-use Assetic\Asset\AssetCollection;
-use CourseHero\AsseticFilehashBuster\FileHashCacheBustingWorker;
+use \Assetic\Asset\AssetCollection;
+use \CourseHero\AsseticFilehashBuster\FileHashCacheBustingWorker;
 use \PHPUnit_Framework_TestCase;
 
 class FilehashCacheBustingWorkerTest extends PHPUnit_Framework_TestCase
@@ -14,11 +14,11 @@ class FilehashCacheBustingWorkerTest extends PHPUnit_Framework_TestCase
     {
         $this->worker = new FileHashCacheBustingWorker();
     }
+
     protected function tearDown()
     {
         $this->worker = null;
     }
-
 
     /**
      * @test
