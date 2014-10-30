@@ -14,7 +14,7 @@ Installation
 Install via composer:
 
 ``` bash
-$ php composer.phar require coursehero/assetic-filehash-buster ~1.0
+$ php composer.phar require course-hero/assetic-filehash-buster ~1.0
 ```
 
 Basic Usage
