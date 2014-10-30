@@ -13,7 +13,7 @@ use Assetic\Factory\Worker\CacheBustingWorker;
  * @package CourseHero\AsseticFilehashBuster
  * @author Jason Wentworth <wentwj@gmail.com>
  */
-class FileHashCacheBustingWorker extends CacheBustingWorker
+class FilehashCacheBustingWorker extends CacheBustingWorker
 {
     public function __construct($separator = '-')
     {

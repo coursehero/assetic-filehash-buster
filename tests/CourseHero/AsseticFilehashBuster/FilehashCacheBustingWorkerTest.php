@@ -3,7 +3,7 @@
 namespace CourseHero\AsseticFilehashBuster\Tests;
 
 use \Assetic\Asset\AssetCollection;
-use \CourseHero\AsseticFilehashBuster\FileHashCacheBustingWorker;
+use \CourseHero\AsseticFilehashBuster\FilehashCacheBustingWorker;
 use \PHPUnit_Framework_TestCase;
 
 class FilehashCacheBustingWorkerTest extends PHPUnit_Framework_TestCase
@@ -12,7 +12,7 @@ class FilehashCacheBustingWorkerTest extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->worker = new FileHashCacheBustingWorker();
+        $this->worker = new FilehashCacheBustingWorker();
     }
 
     protected function tearDown()
