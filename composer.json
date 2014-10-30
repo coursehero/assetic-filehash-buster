@@ -1,20 +1,31 @@
 {
     "name": "coursehero/assetic-filehash-buster",
     "description": "Adds cache busting based on the hash of all asset contents to assetic",
-    "require": {
-        "kriswallsmith/assetic": "~1.2"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4"
-    },
-    "license": "MIT",
+    "license": "Apache-2",
     "authors": [
         {
             "name": "Jason Wentworth",
             "email": "jwentworth@coursehero.com"
         }
     ],
+    "require": {
+        "kriswallsmith/assetic": "~1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4"
+    },
     "autoload": {
         "psr-0": { "CourseHero\\AsseticFilehashBuster": "src/" }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/course-hero/assetic-filehash-buster",
+            "options": {
+                "ssl": {
+                    "verify_peer": "true"
+                }
+            }
+        }
+    ]
 }
