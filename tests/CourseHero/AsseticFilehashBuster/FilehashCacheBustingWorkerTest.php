@@ -90,4 +90,33 @@ class FilehashCacheBustingWorkerTest extends PHPUnit_Framework_TestCase
         $this->worker->process($col, $factory);
     }
 
+    /**
+     * @test
+     */
+    public function shouldFallbackToSourcePathIfFileDoesntExist(){
+        $path = dirname(__FILE__);
+
+        $asset = $this->getMock('Assetic\Asset\AssetInterface');
+        $factory = $this->getMockBuilder('Assetic\Factory\AssetFactory')
+            ->disableOriginalConstructor()
+            ->getMock();
+        $asset->expects($this->any())
+            ->method('getTargetPath')
+            ->will($this->returnValue('imaginaryAsset.txt'));
+
+        $asset->expects($this->any())
+            ->method('getSourceRoot')
+            ->will($this->returnValue($path));
+        $asset->expects($this->any())
+            ->method('getSourcePath')
+            ->will($this->returnValue('imaginaryAsset.txt'));
+
+
+        $asset->expects($this->once())
+            ->method('setTargetPath')
+            ->with($this->equalTo('imaginaryAsset-e02df4c.txt'));
+
+        $this->worker->process($asset, $factory);
+    }
+
 }

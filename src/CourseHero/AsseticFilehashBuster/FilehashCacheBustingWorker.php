@@ -52,7 +52,7 @@ class FileHashCacheBustingWorker extends CacheBustingWorker
     {
         $sourcePath = $asset->getSourcePath();
         $sourceRoot = $asset->getSourceRoot();
-        $data = $sourcePath && $sourceRoot ? hash_file('sha1', $sourceRoot . "/" . $sourcePath) : $sourcePath;
+        $data = $sourcePath && $sourceRoot && file_exists($sourceRoot . "/" . $sourcePath) ? hash_file('sha1', $sourceRoot . "/" . $sourcePath) : $sourcePath;
         hash_update($hash, $data);
     }
 }
