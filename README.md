@@ -45,7 +45,7 @@ assetic.factory_worker tag
 ``` yaml
 services:
     course_hero.assetic.worker.cache_busting:
-        class: CourseHero\UtilsBundle\Assetic\FileHashCacheWorker
+        class: CourseHero\AsseticFilehashBuster\FilehashCacheBustingWorker
         public: false
         tags:
             - { name: assetic.factory_worker }
