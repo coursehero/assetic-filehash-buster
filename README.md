@@ -9,6 +9,14 @@ the file location and timestamp of the assets. This allows cache busting to be
 used in situations where file modification timestamp may change without content
 changing.
 
+Installation
+-------------
+Install via composer:
+
+``` bash
+$ php composer.phar require coursehero/assetic-filehash-buster ~1.0
+```
+
 Basic Usage
 -------------
 
