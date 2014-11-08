@@ -81,7 +81,7 @@ class FilehashCacheBustingWorkerTest extends PHPUnit_Framework_TestCase
 
         $col->expects($this->atLeastOnce())
             ->method('all')
-            ->willReturn([$asset, $asset2]);
+            ->willReturn(array($asset, $asset2));
 
         $col->expects($this->once())
             ->method('setTargetPath')

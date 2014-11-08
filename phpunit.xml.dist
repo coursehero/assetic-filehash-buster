@@ -39,6 +39,7 @@
 
     <logging>
         <log type="coverage-html" target="./docs/coverage" chartset="UTF-8" />
+        <log type="coverage-clover" target="./docs/coverage/clover.xml"/>
     </logging>
 
 </phpunit>

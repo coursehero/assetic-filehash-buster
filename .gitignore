@@ -1,10 +1,10 @@
 ## generic files to ignore
 *~
-*.lock
 .DS_Store
 .DS_Store?
 *.swp
 *.out
+*.lock
 ._*
 .Spotlight-V100
 .Trashes
@@ -13,9 +13,9 @@ ehthumbs.db
 Thumbs.db
 
 ## composer related
-composer.lock
 /vendor/
 composer.phar
+composer.lock
 
 ## editor related
 .idea

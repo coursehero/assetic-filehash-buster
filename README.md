@@ -9,6 +9,8 @@ the file location and timestamp of the assets. This allows cache busting to be
 used in situations where file modification timestamp may change without content
 changing.
 
+[![Build Status](https://travis-ci.org/course-hero/assetic-filehash-buster.svg)](https://travis-ci.org/course-hero/assetic-filehash-buster) [![Coverage Status](https://img.shields.io/coveralls/course-hero/assetic-filehash-buster.svg)](https://coveralls.io/r/course-hero/assetic-filehash-buster)
+
 Installation
 -------------
 Install via composer:
